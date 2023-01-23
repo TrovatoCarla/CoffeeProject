@@ -14,8 +14,8 @@ header{
 }
 
 .nav-item{
-    font-family: 'Kalam', cursive;
-    font-size: 1.5vw;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1vw;
     margin-left: 15px;
 }
 
@@ -30,8 +30,8 @@ section{
 
 .tituloHome{
     text-align: center;
-    font-family: 'Kalam', cursive;
-    font-size: 3vw;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2vw;
 }
 
 aside{
@@ -54,22 +54,26 @@ aside{
 
 .tituloProductosAside{
     text-align: center;
-    font-family: 'Kalam', cursive;
-    font-size: 2.5vw;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.7vw;
+    margin-top: 0.5vw;
+
 }
 
 .imagenProductosAside{
-    width: 28vw;
-    height: 20vw;
+    width: 20vw;
+    height: 15vw;
     margin-left: 18px;
     margin-right: 15px;
 }
 
 .textoProductoAside{
     margin: 1em;
-    font-size: 1.5vw;
+    font-size: 1vw;
+    font-family: 'Rajdhani', sans-serif;
 }
 
+/*FOOTER*/
 footer{
     background-color: rgb(252, 252, 252);
     grid-area: footer;
@@ -91,7 +95,7 @@ footer{
 /*DESKTOP INDEX */
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(1fr);
     grid-template-rows: auto 1fr auto auto;
     grid-template-areas: "menu     menu      menu      menu"
                         "principal principal principal principal"
@@ -155,4 +159,60 @@ footer{
     .tituloHome{
         font-size: 4vw;
     }
-}   
+}
+
+/*SECCION CAFÉ*/
+.cafePadre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.contenedorHijo{
+    width: 18vw;
+    height: 22vw;
+    margin: 3vw;
+}
+
+.prod1{
+    background-color: chartreuse;
+}
+.prod2{
+    background-color: rgb(238, 255, 0);
+}
+.prod3{
+    background-color: rgb(43, 126, 235);
+}
+.prod4{
+    background-color: rgb(202, 96, 176);
+}
+.prod5{
+    background-color: rgb(225, 177, 243);
+}
+.prod6{
+    background-color: rgb(25, 0, 255);
+}
+.prod7{
+    background-color: rgb(240, 156, 29);
+}
+.prod8{
+    background-color: rgb(184, 181, 178);
+}
+.prod9{
+    background-color: rgb(187, 228, 3);
+}
+.prod10{
+    background-color: rgb(240, 29, 75);
+}
+
+.imagenCafe{
+    width: 15vw;
+    height: 13vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+.tituloCafe{
+    font-family: 'Rajdhani', sans-serif;
+    margin-left: 1vw;
+}
