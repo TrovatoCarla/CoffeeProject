@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    grid-area: menu;
+}
+
+.nav-item{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+section{
+    grid-area: principal;
+    margin: 5px;
+}
+.imagenHome{
+    width: 97.5vw;
+   height: 55vw;
+}
+
+.tituloHome{
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+}
+
+aside{
+    grid-area: productos;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.productoAside{
+    background-color: rgb(227, 222, 203);
+    width: 60%;
+    height: 100%;
+    margin: 0.5vw;
+    border-radius: 8%;
+    margin-bottom: 10px;
+}
+
+.tituloProductosAside{
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30pxw;
+    margin-top: 0.5vw;
+
+}
+
+.imagenProductosAside{
+    width: 20vw;
+    height: 15vw;
+    margin-left: 18px;
+    margin-right: 15px;
+}
+
+.textoProductoAside{
+    margin: 1em;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(252, 252, 252);
+    grid-area: footer;
+}
+
+.textoFooter{
+    margin-bottom: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+}
+
+.redSocial{
+   width: 2em;
+   height: 2em; 
+}
+
+.logo{
+    width: 100px;
+   height: 70px;
+}
+/*DESKTOP INDEX */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas: "menu     menu      menu      menu"
+                        "principal principal principal principal"
+                        "productos productos productos productos"
+                        "footer    footer    footer    footer"  ;
+
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+/* TABLET INDEX*/
+@media screen and (max-width:920px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "menu      menu      menu"
+                             "principal principal principal"
+                             "productos productos productos"
+                             "footer    footer    footer";
+    }
+ 
+}
+/*MOBILE INDEX */
+@media screen and (max-width:500px) {
+    .grid{
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto 1fr;
+        grid-template-areas: "menu"
+                             "principal"
+                             "productos"
+                             "footer";
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .contenedorImagenHome{
+        width: 100%;
+        height: 100%;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .productoAside{
+        width: 60%;
+        height: 500%;
+        margin-left: 20%; /*CON ESTE CENTRE LAS CAJAS DE PRODUCTOS EN MOBILE */
+    }
+    .imagenProductosAside{
+        width: 40vw;
+        height: 25vw;
+    }
+    .textoProductoAside{
+        font-size: 3vw;
+    }
+    .nav-item{
+        font-size: 3vw;
+    }
+    .tituloHome{
+        font-size: 4vw;
+    }
+}
+
+/*SECCION CAFÉ*/
+.cafePadre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.contenedorHijo{
+    width: 18vw;
+    height: 22vw;
+    margin:2vw;
+}
+
+.imagenCafe{
+    width: 15vw;
+    height: 17vw;
+    margin-left: 1vw;
+}
+
+.tituloCafe{
+    font-family: 'Rajdhani', sans-serif;
+    margin-left: 2vw;
+}
+.subtituloSecCafe{
+    font-family: 'Rajdhani', sans-serif;
+    /*font-weight: bold;*/
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    font-size: 20px;
+}
