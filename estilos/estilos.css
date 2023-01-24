@@ -15,7 +15,7 @@ header{
 
 .nav-item{
     font-family: 'Rajdhani', sans-serif;
-    font-size: 1vw;
+    font-size: 20px;
     margin-left: 15px;
 }
 
@@ -31,7 +31,7 @@ section{
 .tituloHome{
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2vw;
+    font-size: 40px;
 }
 
 aside{
@@ -55,7 +55,7 @@ aside{
 .tituloProductosAside{
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 1.7vw;
+    font-size: 30pxw;
     margin-top: 0.5vw;
 
 }
@@ -69,7 +69,7 @@ aside{
 
 .textoProductoAside{
     margin: 1em;
-    font-size: 1vw;
+    font-size: 20px;
     font-family: 'Rajdhani', sans-serif;
 }
 
@@ -81,6 +81,8 @@ footer{
 
 .textoFooter{
     margin-bottom: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
 }
 
 .redSocial{
@@ -172,51 +174,24 @@ footer{
 .contenedorHijo{
     width: 18vw;
     height: 22vw;
-    margin: 3vw;
-}
-
-.prod1{
-    background-color: chartreuse;
-}
-.prod2{
-    background-color: rgb(238, 255, 0);
-}
-.prod3{
-    background-color: rgb(43, 126, 235);
-}
-.prod4{
-    background-color: rgb(202, 96, 176);
-}
-.prod5{
-    background-color: rgb(225, 177, 243);
-}
-.prod6{
-    background-color: rgb(25, 0, 255);
-}
-.prod7{
-    background-color: rgb(240, 156, 29);
-}
-.prod8{
-    background-color: rgb(184, 181, 178);
-}
-.prod9{
-    background-color: rgb(187, 228, 3);
-}
-.prod10{
-    background-color: rgb(240, 29, 75);
+    margin:2vw;
 }
 
 .imagenCafe{
     width: 15vw;
-    height: 13vw;
+    height: 17vw;
     margin-left: 1vw;
-    margin-top: 1vw;
 }
+
 .tituloCafe{
     font-family: 'Rajdhani', sans-serif;
-    margin-left: 1vw;
+    margin-left: 2vw;
 }
 .subtituloSecCafe{
     font-family: 'Rajdhani', sans-serif;
-    
+    /*font-weight: bold;*/
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    font-size: 20px;
 }
