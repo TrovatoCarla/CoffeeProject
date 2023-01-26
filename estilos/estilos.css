@@ -94,9 +94,9 @@ footer{
    height: 70px;
 }
 /*DESKTOP INDEX */
-.grid{
+.gridIndex{
     display: grid;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto 1fr auto auto;
     grid-template-areas: "menu     menu      menu      menu"
                         "principal principal principal principal"
@@ -109,7 +109,7 @@ footer{
 
 /* TABLET INDEX*/
 @media screen and (max-width:920px){
-    .grid{
+    .gridIndex{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto;
         grid-template-areas: "menu      menu      menu"
@@ -142,7 +142,7 @@ footer{
 }
 /*MOBILE INDEX */
 @media screen and (max-width:500px) {
-    .grid{
+    .gridIndex{
         grid-template-columns: 1fr;
         grid-auto-rows: auto 1fr;
         grid-template-areas: "menu"
@@ -188,21 +188,21 @@ footer{
 }
 
 /*SECCION CAFÉ*/
+/*Desktop*/
 .grid{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "menu     menu      menu      menu"
-                        "productos productos productos productos"
-                        "productos productos productos productos"
-                        "footer    footer    footer    footer"  ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "menu"
+                         "cafe"
+                         "footer"  ;
 
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
 
-section{
-    grid-area: productos;
+.sectionCafe{
+    grid-area: cafe;
 }
 .cafePadre{
     display: flex;
@@ -213,13 +213,16 @@ section{
 }
 .contenedorHijoCafe{
     width: 18vw;
-    height: 22vw;
-    margin:2vw;
+    height: 25vw;
+    margin:1vw;
+    border-bottom-style: solid;
+    border-color: rgb(211, 207, 207);
 }
 .imagenCafe{
     width: 15vw;
     height: 17vw;
     margin-left: 1vw;
+    margin-bottom: 1vw;
 }
 .tituloCafe{
     font-family: 'Rajdhani', sans-serif;
@@ -233,50 +236,110 @@ section{
     font-size: 20px;
 }
 
+/*Tablet Cafe*/
 @media screen and (max-width:920px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "menu"
+                             "cafe"
+                             "cafe"
+                             "footer"  ;
+    }
     .cafePadre{
         margin-left: 10%;
         margin-right: 10%;
     }
+    .subtituloSecCafe{
+        font-size: 1.9vw;
+    }
+    .contenedorHijoCafe{
+        width: 20vw;
+        height: 27vw;
+    }
 
+}
+/* Mobile Cafe*/
+@media screen and (max-width:500px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "menu"
+                             "cafe"
+                             "cafe"
+                             "footer"  ;
+    }
+    .cafePadre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contenedorHijoCafe{
+        width: 80vw;
+        height: 60vw;
+        border-bottom-style: solid;
+        border-color: rgb(211, 207, 207);
+    }
+    .subtituloSecCafe{
+        font-size: 5vw;
+        text-align: center;
+    }
+    .imagenCafe{
+        width: 50vw;
+        height: 45vw;
+        margin-left: 15%;
+    }
 }
 
 /*SECCION TIENDA*/
+/*Desktop Tienda*/
+.gridTienda{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "menu"
+                         "tienda"
+                         "footer"  ;
 
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+
+}
+.sectionTienda{
+    grid-area: tienda;
+}  
 .contenedorPadreTienda{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 13%;
+    margin-right: 13%;
     margin-top: 2%;
 }
 .tituloTienda{
     font-family: 'Rajdhani', sans-serif;
     text-align: center;
     margin-top: 3%;
-
 }
-
 .contenedorHijoTienda{
-    width: 15vw;
-    height: 28vw;
+    width: 21vw;
+    height: 35vw;
     margin-left: 1.5vw;
     margin-right: 1vw;
     background-color: white;
     font-family: 'Rajdhani', sans-serif;
 }
 .imagenTienda{
-    width: 120px;
-    height: 140px;
+    width: 150px;
+    height: 170px;
     margin-left: 2.5vw;
 }
 .contenedorH2Tienda{
     width: 180px;
     height: 40px;
     margin-top: 10px;
-
+    margin-left: 1.5vw;
 }
 .contenedorHijoTienda h2{
     font-size: 17px;
@@ -286,8 +349,8 @@ section{
 .contenedorH3Tienda{
     width: 180px;
     height: 40px;
+    margin-left: 1.5vw;
 }
-
 .precioTienda{
     font-size: 20px;
     text-align: center;
@@ -304,8 +367,8 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-left: 1vw;
 }
-
 .buttonComprar{
     background-color: rgb(221, 221, 218);
     padding: 3px;
@@ -369,4 +432,57 @@ section{
 .list{ /*ESTE ES PROVISORIO HASTA AGREGAR EL JAVASCRIP, ES PARA QUE SE VEA EL 1 EN CANTIDAD (FACHADA)*/
     margin-top: 7px;
     font-size: 20px;
+}
+/* Tablet Tienda*/
+@media screen and (max-width:920px){
+    .contenedorHijoTienda{
+        width: 30vw;
+        height: 45vw;
+    }
+    .imagenTienda{
+        margin-left: 8vw;
+        width: 15vw;
+        height: 20vw;
+    }
+    .contenedorH2Tienda h2{
+        margin-left: 4vw;
+        font-size: 2vw;
+    }
+    .contenedorH2Tienda{
+        height: 4vw;
+    }
+    .precioTienda{
+        font-size: 2.5vw;
+        width: 7vw;
+        height: 3.5vw;
+    }
+    .contenedorH3Tienda{
+        margin-left: 5vw;
+        height: 4vw;
+    }
+    .contenedorBotones{
+        margin-left: 5.5vw;
+    }
+    .buttonComprar{
+        width: 8vw;
+        font-size: 2vw;
+    }
+    .stepper-input{
+        width: 14vw;
+    }
+}
+/*Mobile Tienda*/
+@media screen and (max-width:500px){
+    .gridTienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "menu"
+                            "tienda"
+                            "footer"  ;
+    }
+    .contenedorHijoTienda{
+        width: 60vw;
+        height: 50vw;
+    }/*QUEDE ACA AJUSTANDO EL CONTENEDOR HIJO EN MOBILE*/
+
 }
