@@ -45,14 +45,38 @@
           </div>
         </div>
       </nav>
-</header>
+  </header>
 
     <section id="IdTrabajaConNosotros">
         <article>
             <div class="contenedorPadreTrabaja">
               <img class="imgTrabajaConNosotros" src="../imagenes/trabajaConNosotros.jpg" alt="">
-              <div class="contenedorTrabajaConNosotros">
+              <div class="tituloTrabajaConNosotros">
+                <h1>Trabajá con nosotros</h1>
+              </div>
 
+              <div class="contenedorTrabajaConNosotros">
+                <h2>Completa el formulario</h2>
+                  <form action="">
+                    <label class="nombreFormulario" for="nombre">Nombre:</label>
+                    <input class="inputNombreFormulario" type="text" name="nombre">
+
+                    <label for="apellido">Apellido:</label>
+                    <input class="inputApellidoFormulario" type="text" name="apellido">
+
+                    <label class="tipoDocumentoFormulario" for="tipoDocumento">Tipo de Documento:</label>
+                    <select name="tipoDocumento">
+                      <option value="DNI">DNI</option>
+                      <option value="Pasaporte">Pasaporte</option>
+                      <option value="CI">CI</option>
+                    </select>
+
+                    <label class="numeroDocumentoFormulario" for="numeroDocumentoFormulario">N°:</label>
+                    <input type="text" name="numeroDocumentoFormulario">
+
+                    <label class="fechaNacimientoFormulario" for="fechaNacimientoFormulario">Fecha de Nacimiento:</label>
+                    <input type="text" name="fechaNacimientoFormulario">
+                  </form>
               </div>
             </div>
         </article>
@@ -61,20 +85,20 @@
     <footer>
       <div class="text-center">
         <div>
-          <img class="logo" src="../imagenes/logo.png" alt="">
-          <button type="button" class="btn btn-outline-secondary btn--instagram">
-            <img class="redSocial"
-              src="../imagenes/instagram.png"
-            />
-          </button>
-          <button type="button" class="btn btn-outline-secondary btn--facebook">
-            <img class="redSocial" src="../imagenes/facebook.png" />
-          </button>
-          <button type="button" class="btn btn-outline-secondary btn--twitter">
-            <img class="redSocial" src="../imagenes/whatsapp.png" />
-          </button>
+            <img class="logo" src="../imagenes/logo.png" alt="">
+            <button type="button" class="btn btn-outline-secondary btn--instagram">
+              <img class="redSocial" src="../imagenes/instagram.png"/>
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn--facebook">
+                <img class="redSocial" src="../imagenes/facebook.png" />
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn--twitter">
+                <img class="redSocial" src="../imagenes/whatsapp.png" />
+            </button>
         </div>
-        <div class="textoFooter">© 2023 Carla Nazareth Trovato, todos los derechos reservados.</div>
+          <div class="textoFooter">
+            </p> © 2023 Carla Nazareth Trovato, todos los derechos reservados.
+          </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

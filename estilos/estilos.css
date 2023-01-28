@@ -534,10 +534,11 @@ footer{
 .gridTrabajaConNosotros{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 1fr 1fr auto;
     grid-template-areas: "menu"
                         "sectionTrabaja"
-                        "footer"  ;
+                        "sectionTrabaja"
+                        "footer";
 
     grid-column-gap: 5px;
     grid-row-gap: 5px;
@@ -553,14 +554,57 @@ footer{
 .imgTrabajaConNosotros{
     width: 100%;
 }
+.tituloTrabajaConNosotros{
+    position: absolute;
+    top: 67%;
+    left: 18%;
+    color: white;
+}
+.tituloTrabajaConNosotros h1{
+    font-size: 7vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .contenedorTrabajaConNosotros{
     background-color:#D0EB3D;
     border-radius: 10px;
     width: 80vw;
     height: 30vw;
-    /*margin-left: 10%;
-    margin-right: 10%;*/
     position: absolute;
     top: 80%;
     left: 10%;
+}
+.contenedorTrabajaConNosotros h2{
+    color: white;
+    margin-left: 22vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.5vw;
+}
+.nombreFormulario{
+    margin-left: 8vw;
+    margin-bottom: 2vw;
+}
+.inputNombreFormulario{
+    margin-right: 9vw;
+    margin-bottom: 2vw;
+    width: 23vw;
+}
+.inputApellidoFormulario{
+    width: 23vw;
+}
+.tipoDocumentoFormulario{
+    margin-left: 2vw;
+}
+.inputDocumentoFormulario{
+    margin-right: 16vw;
+}
+.numeroDocumentoFormulario{
+    margin-left: 0.5vw;
+}
+select{
+    width: 7vw;
+}
+.fechaNacimientoFormulario{
+    margin-left: 2vw;
 }
