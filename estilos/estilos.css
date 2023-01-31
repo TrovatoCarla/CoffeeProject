@@ -531,38 +531,24 @@ footer{
 
 /**SECCION TRABAJA CON NOSOTROS**/
 /*Desktop Trabaja con Nosotros*/
-#gridTrabajaConNosotros{
+.gridTrabajaConNosotros{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: "menu"
                         "sectionTrabaja"
-                        "aside"
                         "footer";
 
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
-.gridTrabajaConNosotros{
+.sectionTrabajaConNosotros{
     grid-area: sectionTrabaja;
-}
-#asideTrabajaConNos{
-    grid-area: aside;
-    margin-top: 14%;
-    margin-left: 27%;
-    width: 52vw;
-    font-family: 'Padyakke Expanded One';
-    font-weight: bold;
-    font-size: 1.3vw;
-    text-align: center;
-}
-#asideTrabajaConNos h3{
-    font-weight: bold;
-    font-size: 2vw;
+    height: 112vw;
 }
 .contenedorPadreTrabaja{
     width: 100%;
-    height: 100%;
+    height: 100vw;
     position: relative;
 }
 .imgTrabajaConNosotros{
@@ -570,7 +556,7 @@ footer{
 }
 .tituloTrabajaConNosotros{
     position: absolute;
-    top: 67%;
+    top: 35%;
     left: 18%;
     color: white;
 }
@@ -578,19 +564,19 @@ footer{
     font-size: 7vw;
     font-family:'Franklin Gothic Medium';
 }
-.contenedorTrabajaConNosotros{
+.contenedorFormTrabajaConNosotro{
     background-color:#fde2da;
     border-radius: 10px;
     width: 80vw;
     height: auto;
     position: absolute;
-    top: 80%;
+    top: 43%;
     left: 10%;
 }
-.contenedorTrabajaConNosotros h2{
+.contenedorFormTrabajaConNosotro h2{
     color: white;
     margin-left: 22vw;
-    margin-top: 1vw;
+    margin-top: 0.3vw;
     margin-bottom: 2vw;
     font-family:'Franklin Gothic Medium';
     font-size: 3.5vw;
@@ -602,6 +588,7 @@ footer{
     width: 100%;
     height: 100%;
     font-family:'Franklin Medium';
+    font-size: 1.3vw;
     color: rgb(89, 87, 87);
 }
 .contenedorNombreFormulario{
@@ -622,7 +609,7 @@ footer{
 }
 .contenedorFechaNacimientoFormulario{
     margin-left: 5%;
-    width: 15vw;
+    width: 20vw;
 }
 .contenedorDocumentoFormulario{
     margin-left: 8%;
@@ -660,12 +647,13 @@ select{
     border: 1.5px solid rgb(155, 150, 150) ;
     color: rgb(89, 87, 87);
 }
-.contenedorCurriculum{
-    margin-left: 38%;
+.contenedorInputCurriculum{
+    margin-left: 14%;
     margin-top: 2vw;
+    margin-bottom: 2vw;
     width: 100%;
 }
-.contenedorCurriculum input{
+.contenedorInputCurriculum input{
     width: 14vw;
     border-radius: 6px;
     border: 1.5px solid rgb(155, 150, 150) ;
@@ -673,45 +661,31 @@ select{
     margin-left: 0.5vw;
     color: rgb(89, 87, 87);
 }
-.contenedorCurriculum input:hover{
+.inputSeleccionarArchivo{
+    margin-right: 7vw;
+}
+.contenedorInputCurriculum input:hover{
     background-color: rgb(158, 153, 153);
     color: black;
 }
-.contenedorEnviarLimpiarFormulario{
-    margin-left: 28vw;
-    margin-top: 2vw;
-}
-.contenedorEnviarLimpiarFormulario input{
-    margin-right: 1vw;
-    margin-bottom: 2%;
-    width: 13vw;
-    border-radius: 6px;
-    border: 1.5px solid rgb(155, 150, 150) ;
-    color: rgb(89, 87, 87);
-}
-.contenedorEnviarLimpiarFormulario input:hover{
-    background-color: rgb(158, 153, 153);
-    color: black;
-}
-.contenedorParrafoTrabajaConNosotros{
-    height: 18vw;
-    width: 27vw;
-    margin-left: 13vw;
-    margin-top: 12%;
-    background-image: url(../imagenes/pinceladaRosa.png);
-}
-.parrafoAsideTrabajaConNosotros{
-    height: 100%;
+.textoFormularioTrabaja{
+    position: absolute;
     width: 100%;
-
+    height: auto;
+    background-image: radial-gradient(#A4BFC6,white);
+    top: 75vw;
+    font-family:'Franklin Medium';
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 2px;
 }
-.parrafoAsideTrabajaConNosotros2{
-    background-image: url(../imagenes/pincelada.png);
-    height: 23vw;
-    width: 100%;
-    margin-top: 2vw;
-}
-.parrafoAsideTrabajaConNosotros2 p{
-    height: 3vw;
+.textoFormularioTrabaja p{
+    margin-left: 27%;
+    margin-right: 27%;
 }
 /*Tablet Trabaja con Nosotros*/
+@media screen and (max-width:950px) { 
+    .contenedorDocumentoFormulario{
+
+    }
+}
