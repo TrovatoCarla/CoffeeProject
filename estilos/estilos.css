@@ -548,15 +548,16 @@ footer{
 }
 .contenedorPadreTrabaja{
     width: 100%;
-    height: 100vw;
+    height: 80vw;
     position: relative;
 }
 .imgTrabajaConNosotros{
     width: 100%;
+    height: 60vw;
 }
 .tituloTrabajaConNosotros{
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 18%;
     color: white;
 }
@@ -570,7 +571,7 @@ footer{
     width: 80vw;
     height: auto;
     position: absolute;
-    top: 43%;
+    top: 60%;
     left: 10%;
 }
 .contenedorFormTrabajaConNosotro h2{
@@ -661,21 +662,24 @@ select{
     margin-left: 0.5vw;
     color: rgb(89, 87, 87);
 }
-.inputSeleccionarArchivo{
+.buttonSeleccionarArchivo{
     margin-right: 7vw;
+    border-radius: 6px;
+    border: 1.5px solid rgb(155, 150, 150) ;
+    color: rgb(89, 87, 87);
 }
 .contenedorInputCurriculum input:hover{
     background-color: rgb(158, 153, 153);
     color: black;
 }
 .textoFormularioTrabaja{
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     height: auto;
     background-image: radial-gradient(#A4BFC6,white);
     top: 75vw;
     font-family:'Franklin Medium';
-    font-size: 1.5rem;
+    font-size: 2vw;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -684,8 +688,130 @@ select{
     margin-right: 27%;
 }
 /*Tablet Trabaja con Nosotros*/
-@media screen and (max-width:950px) { 
+@media screen and (max-width:950px) {
+    .padreFormulario{
+        font-size: 1.8vw;
+    }
+    .contenedorNombreFormulario{
+        width: 30vw;
+        margin-left: 7vw;
+    }
+    .inputNombreFormulario{
+        width: 30vw;
+    }
+    .contenedorApellidoFormulario{
+        margin-right: 5vw;
+        margin-left: 5vw;
+        width: 30vw;
+    }
+    .inputApellidoFormulario{
+        width: 30vw;
+    }
+    .contenedorFechaNacimientoFormulario{
+        margin-left: 7vw;
+        margin-top: 2vw;
+        width: 35vw;
+    }
     .contenedorDocumentoFormulario{
+        margin-left: 0;
+        margin-top: 0;
+        margin-top: 2vw;
+        width: 35vw;
+    }
+    .numeroDocumentoFormulario{
+        margin-left: 0;
+    }
+    .inputDocumento{
+        width: 16.5vw;
+    }
+    .contenedorEmailFormulario{
+        margin-top: 2vw;
+        margin-left: 7vw;
+        width: 35vw;
+    }
+    .inputEmail{
+        width: 30vw;
+    }
+    .contenedorTelefonoFormulario{
+        margin-top: 2vw;
+        margin-left: 0;
+        width: 30vw;
+    }
+    .contenedorInputCurriculum{
+        margin-left: 7vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        width: 100%;
+    }
+    .contenedorInputCurriculum input{
+        width: 17vw;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .buttonSeleccionarArchivo{
+        margin-right: 8vw;
+        width: 17vw;
+    }
+    .tituloTrabajaConNosotros{
+        top: 40%;
+    }
+    .contenedorFormTrabajaConNosotro{
+        top: 50%;
+    }
+}
+/*Mobile Trabaja con Nosotros*/
+@media screen and (max-width:500px){
+    .padreFormulario{
+        font-size: 3vw;
+    }
+    .contenedorNombreFormulario{
+        width: 100%;
+        margin-left: 10vw;
+    }
+    .inputNombreFormulario{
+        width: 60vw;
+    }
+    .contenedorApellidoFormulario{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 10vw;
+        margin-top: 1vw;
+    }
+    .inputApellidoFormulario{
+        width: 60vw;
+    }
+    .contenedorFechaNacimientoFormulario{
+        margin-left: 10vw;
+        margin-top: 1vw;
+        width: 100%;
+    }
+    select{
+        width: 19vw;
+    }
+    .contenedorDocumentoFormulario{
+        margin-left: 10vw;
+        margin-top: 1vw;
+        width: 100%;
+    }
+    .numeroDocumentoFormulario{
+        margin-left: 4vw;
+    }
+    .inputDocumento{
+        width: 30vw;
+    }
+    .contenedorEmailFormulario{
+        margin-top: 1vw;
+        margin-left: 10vw;
+        width: 100%;
+    }
+    .inputEmail{
+        width: 60vw;
+    }
 
+
+    .contenedorTelefonoFormulario{
+        margin-top: 1vw;
+        margin-left: 10vw;
+        width: 40vw;
     }
 }
