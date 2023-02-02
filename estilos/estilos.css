@@ -21,7 +21,7 @@ header{
 }
 .imagenHome{
     width: 97.5vw;
-   height: 55vw;
+    height: 55vw;
 }
 .tituloHome{
     text-align: center;
@@ -72,14 +72,15 @@ footer{
     margin-bottom: 15px;
     font-family: 'Rajdhani', sans-serif;
     font-weight: bold;
+    font-size: 1vw;
 }
 .redSocial{
    width: 2em;
    height: 2em; 
 }
 .logo{
-    width: 100px;
-   height: 70px;
+    width: 5vw;
+   height: 4vw;
 }
 /*DESKTOP INDEX */
 .gridIndex{
@@ -667,13 +668,13 @@ select{
     border-radius: 6px;
     border: 1.5px solid rgb(155, 150, 150) ;
     color: rgb(89, 87, 87);
+    width: 13vw;
 }
 .contenedorInputCurriculum input:hover{
     background-color: rgb(158, 153, 153);
     color: black;
 }
 .textoFormularioTrabaja{
-    /*position: absolute;*/
     width: 100%;
     height: auto;
     background-image: radial-gradient(#A4BFC6,white);
@@ -758,6 +759,17 @@ select{
     .contenedorFormTrabajaConNosotro{
         top: 50%;
     }
+    .redSocial{
+        width: 4vw;
+        height: 4vw; 
+     }
+     .logo{
+        width: 9vw;
+       height: 8vw;
+    }
+    .textoFooter{
+        font-size: 1.5vw;
+    }
 }
 /*Mobile Trabaja con Nosotros*/
 @media screen and (max-width:500px){
@@ -807,11 +819,71 @@ select{
     .inputEmail{
         width: 60vw;
     }
-
-
     .contenedorTelefonoFormulario{
         margin-top: 1vw;
         margin-left: 10vw;
         width: 40vw;
     }
+    .contenedorInputCurriculum{
+        margin-left: 10vw;
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+    }
+    .contenedorInputCurriculum input{
+        width: 28vw;
+        margin-top: 3vw;
+        margin-left: 0;
+    }
+    .buttonSeleccionarArchivo{
+        margin-right: 10vw;
+        width: 28vw;
+    }
+
+    .contenedorPadreTrabaja{
+        height: 130vw;
+    }
+    .tituloTrabajaConNosotros{
+        top: 22%;
+    }
+    .contenedorFormTrabajaConNosotro{
+        width: 80vw;
+        top: 29%;
+    }
+    .sectionTrabajaConNosotros{
+        height: 180vw;
+    }
+    .textoFormularioTrabaja{
+        top: 75vw;
+        font-size: 3vw;
+    }
+    .textoFormularioTrabaja p{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .redSocial{
+        width: 5vw;
+        height: 5vw; 
+     }
+     .logo{
+        width: 12vw;
+       height: 10vw;
+    }
+    .textoFooter{
+        font-size: 2.5vw;
+    }
+}
+/*SECCION CONTACTO*/
+.gridContacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "menu"
+                        "contacto"
+                        "footer";
+
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.principalContacto{
+    grid-area: contacto;
 }
