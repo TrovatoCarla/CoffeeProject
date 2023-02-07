@@ -23,11 +23,42 @@ header{
     width: 97.5vw;
     height: 55vw;
 }
-.tituloHome{
-    text-align: center;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 3vw;
+.contenedorH1Index{
+    margin: auto;
+    display: table;
 }
+.tituloHome{
+    /*text-align: center;
+
+    font-size: 3vw;*/
+    font-family: 'Rajdhani', sans-serif;
+    float: left;
+    color: black;
+    position: relative;
+}
+h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    border-left: 1px solid #000;
+    background: white;
+    animation: maquina 4s infinite alternate steps(19),
+                parpadeo 0.4s;
+}
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+@keyframes parpadeo{
+    100%{
+        border-color: transparent;
+    }
+}
+
 .AsideIndex{
     grid-area: productos;
     margin: 5px;
@@ -937,7 +968,7 @@ select{
         height: 50vw;
     }
     .contenedorDatosContacto{
-        width: 50vw;
+        width: 40vw;
         height: 40vw;
         font-family: 'Rajdhani', sans-serif;
         text-align: center;
