@@ -12,10 +12,9 @@ header{
 }
 .nav-item{
     font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     margin-left: 15px;
 }
-
 /*FOOTER*/
 footer{
     background-color: rgb(252, 252, 252);
@@ -251,7 +250,7 @@ h1 span{
     position: relative;
     width: 18vw;
     height: 25vw;
-    margin:1vw;
+    margin:3vw;
     border-bottom-style: solid;
     border-color: rgb(211, 207, 207);
 }
@@ -270,7 +269,7 @@ h1 span{
 }
 .contenedorHijoCafe .back{
     transform: perspective(600px) rotateY(180deg);
-    background: #f8cbad;
+    background: #ffdec7;
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
     box-shadow: 0 5px 10px #000;
@@ -278,13 +277,14 @@ h1 span{
 .contenedorHijoCafe .back .subtituloSecCafe{
     font-family: 'Rajdhani', sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: bold;
     color: rgb(101, 100, 100);
 }
 .contenedorHijoCafe .back .textoBack{
     letter-spacing: 1px;
-    margin: 1vw;
+    margin: 1.5vw;
+    font-size: 1vw;
 }
 .contenedorHijoCafe:hover .front{
     transform: perspective(600px) rotateY(180deg);
@@ -297,7 +297,7 @@ h1 span{
     text-align: center;
     margin-top: 1vw;
     margin-bottom: 0.5vw;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
 }
 .imagenCafe{
     width: 15vw;
@@ -325,11 +325,25 @@ h1 span{
         margin-right: 10%;
     }
     .subtituloSecCafe{
-        font-size: 1.9vw;
+        font-size: 2.5vw;
     }
     .contenedorHijoCafe{
-        width: 20vw;
-        height: 27vw;
+        width: 30vw;
+        height: 37vw;
+    }
+    .imagenCafe{
+        width: 22vw;
+        height: 25vw;
+        margin-left: 3.5vw;
+        margin-bottom: 0;
+        margin-top: 1.5vw;
+    }
+    .contenedorHijoCafe .back .subtituloSecCafe{
+        font-size: 2.5vw;
+
+    }
+    .contenedorHijoCafe .back .textoBack{
+        font-size: 1.8vw;
     }
 
 }
@@ -349,19 +363,29 @@ h1 span{
         justify-content: space-between;
     }
     .contenedorHijoCafe{
-        width: 80vw;
-        height: 60vw;
+        width: 70vw;
+        height: 70vw;
         border-bottom-style: solid;
         border-color: rgb(211, 207, 207);
+        margin: 3vw;
     }
     .subtituloSecCafe{
         font-size: 5vw;
         text-align: center;
     }
     .imagenCafe{
-        width: 50vw;
+        width: 40vw;
         height: 45vw;
-        margin-left: 15%;
+        margin-left: 15vw;
+    }
+    .contenedorHijoCafe .back .subtituloSecCafe{
+        font-size: 4.5vw;
+        margin: 2vw;
+
+    }
+    .contenedorHijoCafe .back .textoBack{
+        font-size: 3.5vw;
+        margin: 4vw;
     }
 }
 
